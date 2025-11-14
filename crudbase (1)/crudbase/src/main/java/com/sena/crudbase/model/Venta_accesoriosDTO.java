@@ -1,25 +1,17 @@
 package com.sena.crudbase.model;
 
+import java.sql.Date;
 
+import org.hibernate.annotations.ManyToAny;
 
+import jakarta.annotation.Generated;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-
-@Entity(name="stiven")
-public class stivenDTO {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private int id;
-
+@Entity(name = "venta") // nombre entidad 
+public class VentaDTO { 
     
-    @Column(name = "stiven")
-    private String  name;
-
-
 }
